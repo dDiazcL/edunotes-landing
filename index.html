@@ -4,38 +4,69 @@
     <meta charset="UTF-8">
     <title>Edunotes - Descarga de APK</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-   <header>
+
+   <header class="header fade-in">
         <img src="assets/logo.png" class="app-logo">
-        <h1>Edunotes</h1>
-        <p class="subtitle">Tu gestor de notas para guardar apuntes!!!</p>
+        <h1 class="title">Edunotes</h1>
+        <p class="subtitle">Tu gestor inteligente de notas</p>
+
+        <a class="download-btn" 
+            href="https://raw.githubusercontent.com/dDiazcL/edunotes-landing/main/assets/app-release.apk"
+            download>
+            📥 Descargar APK
+          </a>
    </header>
    
-   <section class="download-section">
-        <a class="download-btn" href="https://raw.githubusercontent.com/dDiazcL/edunotes-landing/main/assets/app-release.apk" download> 📥 Descargar APK</a>
+
+   <section class="description section fade-in">
+        <h2>¿Que es Edunotes?</h2>
+        <p>
+            Una aplicacion rápida, moderna e intuitiva que permite crear, editar y organizar notas de forma edifciente,
+            ideal para estudiantes y personas que necesitan llevar su apuntes o ideas siempre a mano.
+        </p>
    </section>
 
-   <section class="description">
-        <h2>Descripción</h2>
-        <p>Edunotes es una aplicacion móvil diseñada para que estudiantes o personas puedan crear, editar y organizar notas de manera rapida y sencilla.</p>
-   </section>
-
-   <section class="features">
+   <section class="features section fade-in">
         <h2>Caracteristicas Principales</h2>
-        <ul>
-            <li>Crear y editar notas</li>
-            <li>Eliminar notas</li>
-            <li>Interfaz moderna, sencilla e intuitiva</li>
-            <li>Funciona sin conexión</li>
-        </ul>
+
+        <div class="feature-list">
+            <div class="feature-card">
+               <span class="material-icons icon">Edit</span>
+               <p>Crear y editar notas</p>
+            </div>
+
+            <div class="feature-card">
+               <span class="material-icons icon">Delete</span>
+               <p>Eliminar rapidamente</p>
+            </div>
+
+            <div class="feature-card">
+               <span class="material-icons icon">Offline_pin</span>
+               <p>Funciona sin conexion y de manera local</p>
+            </div>
+
+            <div class="feature-card">
+               <span class="material-icons icon">Dashboard</span>
+               <p>Interfaz moderna</p>
+            </div>
+        </div>
    </section>
 
-   <section class="screenshots"> 
+   <section class="screenshots section fade-in"> 
         <h2>Capturas de Pantalla</h2>
-        <img src="screenshots/pantalla1.png">
-        <img src="screenshots/pantalla2.png">
+
+        <div class="phone-frame">
+          <img src="screenshots/pantalla1.png">
+          <img src="screenshots/pantalla2.png">
+        </div>
    </section>
    
 </body>
