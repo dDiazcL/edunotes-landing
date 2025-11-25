@@ -91,21 +91,18 @@ h1 {
 }
 
 .icon-box {
-    width: 60px;
-    height: 60px;
     background: #ffe29a;
+    padding: 12px;
     border-radius: 12px;
-    margin: 0 auto 15px auto;
+    margin-bottom: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease;
 }
 
 .icon-box img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .feature-card:hover .icon-box {
