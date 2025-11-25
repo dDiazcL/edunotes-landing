@@ -53,24 +53,56 @@ h2 {
     margin-bottom: 20px;
 }
 
-.features {
-    background: #fff7e5;
-    border-top: 3px solid #FFC632;
+.features-section {
+    padding: 80px 20px;
+    background: #FFF7E6; 
+    text-align: center;
 }
 
-.feature-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff8c00; 
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .feature-card {
-    background: white;
-    width: 180px;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+    cursor: default;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e68500; 
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
 }
 
 .icon {
