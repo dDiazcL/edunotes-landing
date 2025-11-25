@@ -123,9 +123,32 @@ h1 {
     line-height: 1.4;
 }
 
-.screenshots img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.screenshots {
+    margin-top: 80px;
+}
+
+.screenshots h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.screenshots-container img {
+    width: 260px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.screenshots-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.20);
+}
+
+.curve-separator {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to bottom, #ffb532 0%, #ffffff 100%);
+    clip-path: ellipse(75% 100% at 50% 0%);
+    margin-top: -40px;
 }
