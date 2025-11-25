@@ -1,141 +1,131 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins' ,sans-serif;
     background: #ffffff;
     color: #333;
+}
+
+section {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
     text-align: center;
 }
 
 header {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #FFC632, #ff8a00);
-    color: #fff;
+    background: linear-gradient(45deg, #ffcc33, #ff9f1c);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .app-logo {
-    width: 120px;
+    width: 80px;
     margin-bottom: 10px;
 }
 
-.title {
-    font-size: 48px;
-    font-weight: 700;
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
 }
 
 .subtitle {
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 16px;
+    opacity: 0.9;
 }
 
 .download-btn {
-    background: #ffffff;
-    color: #ff8a00;
+    display: inline-block;
+    background: #fff;
+    color: #ff9800;
+    margin-top: 25px;
     padding: 14px 30px;
     border-radius: 30px;
-    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease;
 }
 
 .download-btn:hover {
     transform: scale(1.05);
+    background: #fffae6;
 }
 
-.section {
-    padding: 60px 20px;
-}
-
-h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.description {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
 }
 
 .features-section {
-    padding: 80px 20px;
-    background: #FFF7E6; 
-    text-align: center;
+    background: #fff7e6;
+    padding: 70px 20px;
 }
 
-.section-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #ff8c00; 
-    margin-bottom: 40px;
+.features-section h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.features-container {
+    display: flex;
+    justify-content: center;
     gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
 .feature-card {
-    background: #fff;
-    padding: 30px;
+    background: #ffffff;
+    width: 230px;
+    padding: 25px 15px;
     border-radius: 18px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: transform .25s ease, box-shadow .25s ease;
-    cursor: default;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-.feature-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #ffe29a;
+    border-radius: 12px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.icon-box img {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-card:hover .icon-box {
+    transform: scale(1.07);
 }
 
 .feature-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #e68500; 
-    margin-bottom: 8px;
+    margin: 10px 0 8px;
+    font-size: 18px;
 }
 
 .feature-card p {
     font-size: 14px;
-    color: #666;
+    color: #555;
+    line-height: 1.4;
 }
 
-.icon {
-    font-size: 40px;
-    color: #ff8a00;
-    margin-bottom: 10px;
+.screenshots img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
-.phone-frame {
-    margin: 30px auto;
-    width: 260px;
-    background: white;
-    padding: 15px;
-    border-radius: 30px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.phone-frame img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.7s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
